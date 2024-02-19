@@ -1,2 +1,2 @@
-# Codility
+#<i> Codility</i>
 Codility-DeveloperTraining

@@ -2,10 +2,8 @@
 using namespace std;
 
 int  solution(int N) {
-	int value= 0;
-	int value2 = 0;
+	int value=0, value2=0, counter=0;
 	int copyOfN, copyofN2 = N;
-	int counter=0;
 	int max=0;
 	
 	while (N!=0) {
@@ -29,12 +27,10 @@ int  solution(int N) {
 	if (value2 == 0 || value2 == 1) {
 		cout << "There is No Gap Length";
 	}
-	
 	else{
 		for (int k = 0; k < value2; k++) {
 		if (max < (pOnesArray[k] - pOnesArray[k + 1]-1)) 
-			max = (pOnesArray[k] - pOnesArray[k + 1]-1);
-		
+			max = (pOnesArray[k] - pOnesArray[k + 1]-1);	
 	}
 	cout << "Gap Length: "<<max;
 	}
